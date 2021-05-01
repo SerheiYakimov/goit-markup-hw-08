@@ -1059,7 +1059,19 @@ img {
 }
 
 .project {
-  --grid-item: 3;
+  --grid-item: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    --grid-item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project {
+    --grid-item: 3;
+  }
 }
 
 .project__title {
