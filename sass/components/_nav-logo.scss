@@ -1,0 +1,24 @@
+.nav-logo,
+.footer-contacts__nav-logo {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.nav-logo__logo {
+  margin-right: 93px;
+
+  font-family: var(--logo-font);
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.nav-logo__dark-logo {
+  font-family: var(--logo-font);
+  color: #000000;
+  text-decoration: none;
+}

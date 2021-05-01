@@ -1,0 +1,15 @@
+.footer-contacts {
+  display: inline-block;
+}
+
+.footer-contacts__logo {
+  font-family: var(--logo-font);
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer-contacts__light-logo {
+  font-family: var(--logo-font);
+  color: #ffffff;
+  text-decoration: none;
+}
