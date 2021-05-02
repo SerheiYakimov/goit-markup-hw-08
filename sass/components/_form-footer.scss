@@ -1,6 +1,11 @@
 .footer-form {
-  width: 570px;
-  height: 86px;
+  width: 450px;
+  height: 156px;
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    height: 86px;
+  }
 }
 
 .singup-form {
@@ -8,13 +13,18 @@
 }
 
 .singup-form__content {
-  display: flex;
   font-size: 12px;
   color: var(--main-text-color);
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 12px;
+    color: var(--main-text-color);
+  }
 }
 
 .singup-form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -28,13 +38,24 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .singup-form__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
+  margin: auto;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .singup-form__btn-icon {

@@ -1,5 +1,13 @@
 .footer-contacts {
-  display: inline-block;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
 }
 
 .footer-contacts__logo {
