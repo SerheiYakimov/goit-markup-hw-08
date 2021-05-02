@@ -5,10 +5,23 @@
 
 .footer__content {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
+  flex-wrap: wrap;
+  --grid-item: 1;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    --grid-item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    --grid-item: 3;
+  }
+}
+/*
 .footer__item {
   flex-wrap: wrap;
   --grid-item: 1;
@@ -25,7 +38,7 @@
     justify-content: space-between;
     --grid-item: 3;
   }
-}
+} */
 
 .list-connection-footer {
   display: block;
