@@ -358,19 +358,13 @@ img {
 }
 
 .section-title {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .section-title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-text-color);
-  }
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
 }
 
 .second-title {
@@ -832,7 +826,6 @@ img {
   }
 }
 
-.our-activity,
 .our-team,
 .portfolio,
 .our-clients {
@@ -847,6 +840,18 @@ img {
 .section-hero,
 .footer {
   background-color: var(--dark-bg-color);
+}
+
+.our-activity {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-activity {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .header {
@@ -998,51 +1003,33 @@ img {
 }
 
 .list__item {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .list__item {
-    --grid-item: 3;
-    position: relative;
-  }
+  --grid-item: 3;
+  position: relative;
 }
 
 .link:hover .list__item {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .link:hover .list__item {
-    --grid-item: 3;
-  }
+  --grid-item: 3;
 }
 
 .list__work {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .list__work {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-color);
-    width: 370px;
-    height: 70px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgba(47, 48, 58, 0.8);
-  }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  width: 370px;
+  height: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .our-team {

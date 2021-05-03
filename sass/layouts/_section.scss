@@ -1,4 +1,3 @@
-.our-activity,
 .our-team,
 .portfolio,
 .our-clients {
@@ -13,4 +12,14 @@
 .section-hero,
 .footer {
   background-color: var(--dark-bg-color);
+}
+
+.our-activity {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
