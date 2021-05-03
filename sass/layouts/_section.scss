@@ -15,11 +15,7 @@
 }
 
 .our-activity {
-  display: none;
-
-  @media screen and (min-width: 1200px) {
-    display: block;
-    padding-top: 94px;
-    padding-bottom: 94px;
+  @media screen and (max-width: 1199.98px) {
+    display: none;
   }
 }
