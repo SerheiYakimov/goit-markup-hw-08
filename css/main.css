@@ -1139,13 +1139,24 @@ img {
   }
 }
 
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
 .client-list__item {
-  --grid-item: 2;
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199.98px) {
   .client-list__item {
-    --grid-item: 3;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
