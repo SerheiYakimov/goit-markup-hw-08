@@ -35,6 +35,12 @@
   }
 }
 
+.list-nav--wrap {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+
 .list-connection {
   display: inline-flex;
   padding-top: 32px;
@@ -73,4 +79,10 @@
 
 .list-contact__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.list-contact--wrap {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }

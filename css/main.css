@@ -303,6 +303,18 @@ img {
   text-decoration: none;
 }
 
+.mobile-menu__btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-menu__icon {
+  width: 40px;
+  height: 40px;
+}
+
 .list-nav,
 .list-contact,
 .list-features,
@@ -922,6 +934,12 @@ img {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .list-nav--wrap {
+    display: none;
+  }
+}
+
 .list-connection {
   display: inline-flex;
   padding-top: 32px;
@@ -956,6 +974,12 @@ img {
 
 .list-contact__item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .list-contact--wrap {
+    display: none;
+  }
 }
 
 .section-hero {

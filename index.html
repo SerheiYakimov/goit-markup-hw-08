@@ -14,18 +14,18 @@
 <body>
 
     <!-- Шапка сайта-->
-<!--
+
     <header class="header">
         <div class="conteiner header-section">
             <nav class="nav-logo">
                 <a class="nav-logo__logo nav-logo" href="./index.html">Web<span class="nav-logo__dark-logo nav-logo">Studio</span></a>
-                <ul class="list-nav">
+                <ul class="list-nav list-nav--wrap">
                     <li class="list-nav__item"><a class="link list-nav__link list-nav__link--current" href="./index.html">Студия</a></li>
                     <li class="list-nav__item"><a class="link list-nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="list-nav__item"><a class="link list-nav__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-                <ul class="list-contact">
+                <ul class="list-contact list-contact--wrap">
                     <li class="list-contact__item">
                         <a class="list-connection" href="mailto:info@devstudio.com">
                             <svg class="list-connection__icon" width="16" height="12">
@@ -41,19 +41,24 @@
                         +38 096 111 11 11</a>
                     </li>
                 </ul>
+                <button class="mobile-menu__btn" data-menu-button>
+                    <svg class="mobile-menu__icon">
+                        <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                        <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
         </div>
     </header>
     <main>
-        -->
-        
-        <!--Герой-->
+    
+        <!--Герой
         
         <section class="section-hero overlay">
             <div class="conteiner hero">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section>
+        </section>-->
         
     <!--Особенности
         
@@ -465,9 +470,9 @@
                 <button type="submit" class="form__btn">Подписаться</button>               
             </form>
         </div>
-    </div>
-    -->
-
+    </div>-->
+    
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
    
 </body>
