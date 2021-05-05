@@ -506,15 +506,21 @@ img {
 .button-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .button-list {
     justify-content: center;
-    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-list {
+    justify-content: center;
     margin-bottom: 50px;
   }
 }
@@ -523,6 +529,7 @@ img {
   display: inline-block;
   min-width: 73px;
   height: 38px;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -546,6 +553,12 @@ img {
 
 .button-list__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .button-list__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .footer-form {
