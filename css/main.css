@@ -338,24 +338,40 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   list-style: none;
-  color: var(--second-text-color);
 }
 
 .mobile-list-contact {
   display: flex;
   flex-direction: column;
-  margin-left: 0;
-  font-size: 34px;
-  line-height: 1.18;
+  padding: 0;
+  margin-bottom: 64px;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: #2196f3;
-  display: flex;
-  padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
+}
+
+.mobile-call {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.mobile-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.mobile-list-contact__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-menu__btn {
