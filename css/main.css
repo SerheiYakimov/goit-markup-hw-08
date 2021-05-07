@@ -1137,6 +1137,10 @@ img {
   fill: var(--accent-color);
 }
 
+.list-contact__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 1200px) {
   .list-contact__item:not(:last-child) {
     margin-right: 30px;
