@@ -5,21 +5,27 @@
   justify-content: center;
 
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   @media screen and (min-width: 1200px) {
     justify-content: start;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
 .nav-logo__logo {
-  margin-right: 93px;
+  margin-right: 88px;
 
   font-family: var(--logo-font);
   color: var(--accent-color);
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .nav-logo__dark-logo {
