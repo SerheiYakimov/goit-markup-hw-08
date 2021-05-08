@@ -17,39 +17,75 @@
 
 <body>
 
-    <!-- Шапка сайта
+    <!-- Шапка сайта-->
 
     <header class="header">
         <div class="conteiner header-section">
             <nav class="nav-logo">
-                <a class="nav-logo__logo nav-logo" href="./index.html">Web<span
-                        class="nav-logo__dark-logo nav-logo">Studio</span></a>
-                <ul class="list-nav">
-                    <li class="list-nav__item"><a class="link list-nav__link"
-                            href="./index.html">Студия</a></li>
+                <a class="nav-logo__logo nav-logo" href="./index.html">Web<span class="nav-logo__dark-logo nav-logo">Studio</span></a>
+                <ul class="list-nav list-nav--wrap">
+                    <li class="list-nav__item"><a class="link list-nav__link " href="./index.html">Студия</a></li>
                     <li class="list-nav__item"><a class="link list-nav__link list-nav__link--current" href="./portfolio.html">Портфолио</a></li>
                     <li class="list-nav__item"><a class="link list-nav__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="list-contact">
-                <li class="list-contact__item">
-                    <a class="list-connection" href="mailto:info@devstudio.com">
-                        <svg class="list-connection__icon" width="16" height="12">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="list-contact__item">
-                    <a class="list-connection" href="tel:+380961111111">
+                <ul class="list-contact list-contact--wrap">
+                    <li class="list-contact__item">
+                        <a class="list-connection" href="mailto:info@devstudio.com">
+                            <svg class="list-connection__icon" width="16" height="12">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="list-contact__item">
+                        <a class="list-connection" href="tel:+380961111111">
                         <svg class="list-connection__icon" width="10" height="16">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+                <button class="mobile-menu__btn" data-menu-button>
+                    <svg class="mobile-menu__icon" width="40" height="40">
+                        <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                        <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu" data-menu>
+                    <ul class="mobile-list-nav">
+                        <li class="mobile-list-nav__item"><a class="link mobile-list-nav__link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile-list-nav__item"><a class="link mobile-list-nav__link list-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile-list-nav__item"><a class="link mobile-list-nav__link" href="">Контакты</a></li>
+                    </ul>
+                    <ul class="mobile-list-contact">
+                        <li class="mobile-list-contact__item">
+                            <a class="mobile-call" href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-list-contact__item">
+                            <a class="mobile-mail" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
+                        </li>                        
+                    </ul>
+                    <ul class="mobile-list-social-networks">
+                        <li class="social-networks__item">
+                            <a href="" class="social-networks__link" target="_blank" rel="noopener noreferer">Instagram</a>
+                        </li>
+                        <li class="social-networks__item">
+                            <a href="" class="social-networks__link" target="_blank" rel="noopener noreferer">Twitter</a>
+                        </li>
+                        <li class="social-networks__item">
+                            <a href="" class="social-networks__link" target="_blank" rel="noopener noreferer">Facebook</a>
+                        </li>
+                        <li class="social-networks__item">
+                            <a href="" class="social-networks__link" target="_blank" rel="noopener noreferer">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
         </div>
     </header>
--->
+
     <main>
         <section class="portfolio">
             <div class="conteiner">
@@ -221,10 +257,10 @@
         </section>
     </main>
 
-    <!--Футер
+    <!--Футер-->
 
     <footer class="footer">
-        <div class="conteiner grid__footer">
+        <div class="conteiner footer__content grid__footer">
             <div class="footer-contacts">
                 <a class="footer-contacts__logo footer-contacts__nav-logo" href="./index.html">Web<span
                         class="footer-contacts__light-logo footer-contacts__nav-logo">Studio</span></a>
@@ -278,7 +314,7 @@
                 <form class="singup-form">
                     <div class="singup-form__content">
                         <input class="singup-form__input" type="email" name="email" placeholder="E-mail">
-        
+    
                         <button type="submit" class="singup-form__btn">
                             Подписаться
                             <svg class="singup-form__btn-icon" width="24" height="24">
@@ -286,14 +322,14 @@
                             </svg>
                         </button>
                     </div>
-        
+    
                 </form>
             </div>
         </div>
-    </footer> -->
-
+    </footer>
     
     <script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>

@@ -48,8 +48,10 @@
 
 .button-list__item:not(:last-child) {
   margin-right: 8px;
+}
 
-  @media screen and (max-width: 1199.98px) {
+.button-list__item:nth-child(-n + 3) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 15px;
   }
 }
