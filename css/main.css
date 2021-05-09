@@ -1367,6 +1367,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .list-features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 1199.98px) {
   .list-features {
     display: flex;
@@ -1378,7 +1385,7 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .list-features__item {
-    width: 450px;
+    max-width: 450px;
     font-size: 14px;
     line-height: 1.71;
     color: var(--main-text-color);

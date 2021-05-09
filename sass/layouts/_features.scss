@@ -48,6 +48,11 @@
 }
 
 .list-features {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   @media screen and (max-width: 1199.98px) {
     display: flex;
     flex-wrap: wrap;
@@ -58,7 +63,7 @@
 
 .list-features__item {
   @media screen and (max-width: 767.98px) {
-    width: 450px;
+    max-width: 450px;
 
     font-size: 14px;
     line-height: 1.71;
