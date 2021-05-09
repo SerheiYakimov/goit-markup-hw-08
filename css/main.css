@@ -203,6 +203,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 body {
@@ -1371,15 +1372,6 @@ img {
   .list-features {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 1199.98px) {
-  .list-features {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 
