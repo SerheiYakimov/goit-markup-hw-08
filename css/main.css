@@ -1561,6 +1561,7 @@ img {
 }
 
 .project {
+  display: flex;
   background: var(--title-color);
   border: 1px solid #eeeeee;
   transition-property: box-shadow;
