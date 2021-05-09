@@ -51,6 +51,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -67,11 +69,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 450px;
-  }
-
-  @media screen and (max-width: 1199.98px) {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
