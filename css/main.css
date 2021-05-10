@@ -737,14 +737,18 @@ img {
   }
 }
 
-.footer-form {
-  max-width: 450px;
-  height: 156px;
+@media screen and (max-width: 1199.98px) {
+  .footer-form {
+    max-width: 450px;
+    height: 156px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-form {
-    width: 570px;
+    max-width: 570px;
     height: 86px;
   }
 }
@@ -1042,26 +1046,33 @@ img {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-top: -30px;
-}
-
-.grid__item {
-  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-  margin-right: 30px;
-  margin-top: 30px;
-}
-
-.grid__project {
-  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-  margin-right: 30px;
-  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .grid__footer {
-    flex-basis: calc((50% - 45px * var(--grid-item)) / var(--grid-item));
+  .grid {
+    margin-right: -30px;
+    margin-top: -30px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .grid__item {
+    flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid__project {
+    flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+}
+
+.grid__footer {
+  flex-basis: calc((50% - 45px * var(--grid-item)) / var(--grid-item));
 }
 
 @media screen and (min-width: 1200px) {

@@ -1,9 +1,13 @@
 .footer-form {
-  max-width: 450px;
-  height: 156px;
+  @media screen and (max-width: 1199.98px) {
+    max-width: 450px;
+    height: 156px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and (min-width: 1200px) {
-    width: 570px;
+    max-width: 570px;
     height: 86px;
   }
 }
