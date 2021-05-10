@@ -203,7 +203,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  outline: 1px solid red;
 }
 
 body {
@@ -1031,6 +1030,7 @@ img {
 }
 
 .form__contract {
+  margin-left: 2px;
   color: var(--accent-color);
 }
 
