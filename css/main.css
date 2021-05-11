@@ -322,6 +322,7 @@ img {
   padding: 48px 40px;
   background-color: var(--title-color);
   z-index: 1;
+  overflow: auto;
 }
 
 .mobile-menu.is-open {
@@ -855,7 +856,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 450px;
-  min-height: 609px;
+  max-height: 609px;
   background-color: var(--title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -864,7 +865,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    min-height: 581px;
+    max-height: 581px;
   }
 }
 
@@ -1046,12 +1047,11 @@ img {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .grid {
-    margin-right: -30px;
+    margin-left: -30px;
     margin-top: -30px;
   }
 }
@@ -1059,7 +1059,7 @@ img {
 @media screen and (min-width: 768px) {
   .grid__item {
     flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-    margin-right: 30px;
+    margin-left: 30px;
     margin-top: 30px;
   }
 }
@@ -1067,7 +1067,7 @@ img {
 @media screen and (min-width: 768px) {
   .grid__project {
     flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-    margin-right: 30px;
+    margin-left: 30px;
     margin-top: 30px;
   }
 }
@@ -1392,8 +1392,8 @@ img {
   .list-features {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -1411,8 +1411,8 @@ img {
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .list-features__item {
     flex-basis: calc((100% - 2 * 30px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -1569,8 +1569,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -1581,16 +1581,16 @@ img {
 @media (min-width: 480px) and (max-width: 767.98px) {
   .client-list__item {
     flex-basis: calc((100% - 2 * 30px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .client-list__item {
     flex-basis: calc((100% - 3 * 30px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -1611,6 +1611,10 @@ img {
 
 .project {
   --grid-item: 1;
+}
+
+.project:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {

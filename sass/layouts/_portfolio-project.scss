@@ -11,6 +11,10 @@
     --grid-item: 1;
   }
 
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     --grid-item: 2;
   }

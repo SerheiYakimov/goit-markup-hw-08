@@ -10,6 +10,7 @@
   padding: 48px 40px;
   background-color: var(--title-color);
   z-index: 1;
+  overflow: auto;
 
   &.is-open {
     left: 0;
