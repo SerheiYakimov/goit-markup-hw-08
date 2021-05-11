@@ -203,6 +203,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 body {
@@ -1474,6 +1475,10 @@ img {
 
 .team__item {
   --grid-item: 1;
+}
+
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team__item {
