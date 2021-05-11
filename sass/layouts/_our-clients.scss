@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  min-width: 210px;
   height: 90px;
   border: 1px solid var(--team-icon-color);
   border-radius: 4px;
@@ -31,13 +31,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 226px;
-    height: 90px;
+    min-width: 226px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 170px;
-    height: 90px;
+    min-width: 170px;
   }
 }
 
