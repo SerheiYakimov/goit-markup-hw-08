@@ -1482,6 +1482,12 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team__item {
     --grid-item: 2;
@@ -1606,6 +1612,12 @@ img {
 
 .project {
   --grid-item: 1;
+}
+
+@media screen and (max-width: 767.98px) {
+  .project:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
